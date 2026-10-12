@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitor de Texto com Voz</title>
+    <!-- Vinculando o CSS externo -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <h1>Leitor de Texto para Voz</h1>
+        <p class="subtitle">Cole seu texto abaixo e clique em "Ouvir"</p>
+
+        <textarea id="texto" placeholder="Cole seu texto aqui..."></textarea>
+
+        <div class="controls">
+            <div class="control-group">
+                <label for="vozes">Voz:</label>
+                <select id="vozes">
+                    <option value="">Carregando vozes...</option>
+                </select>
+            
+
+            <div class="control-group">
+                <label for="velocidade">Velocidade: <span id="valVelocidade">1x</span></label>
+                <input type="range" id="velocidade" min="0.5" max="2" value="1" step="0.1">
+            </div>
+        </div>
+ </div>
+        <div class="buttons">
+            <button id="btnPlay">▶ Ouvir</button>
+            <button id="btnPause">⏸ Pausar</button>
+            <button id="btnStop">⏹ Parar</button>
+            <button id="btnClear">🗑 Limpar</button>
+        </div>
+   
+</div>
+    <!-- Vinculando o JavaScript externo -->
+    <script src="index.js"></script>
+</body>
+</html>
